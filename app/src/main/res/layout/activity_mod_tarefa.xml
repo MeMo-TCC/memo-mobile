@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:backgroundTint="@color/telaFundo"
+    tools:context=".ActivityModTarefa">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/telaFundo">
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/ceruleo"
+            android:onClick="excluirTarefa"
+            android:text="Excluir tarefa"
+            android:textColor="@color/telaFundo"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAttTarefa" />
+
+        <Button
+            android:id="@+id/btnVoltar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/ceruleo"
+            android:onClick="voltar"
+            android:text="@string/btnVoltar"
+            android:textColor="@color/telaFundo"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTarefaFeita" />
+
+        <TextView
+            android:id="@+id/txtTarefa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/txtModTarefa"
+            android:textColor="@color/texto"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CalendarView
+            android:id="@+id/calendarView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTarefa" />
+
+        <Spinner
+            android:id="@+id/spinnerHorarios2"
+            android:layout_width="@dimen/edtsWidth"
+            android:layout_height="@dimen/edtsHeight"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView2" />
+
+        <EditText
+            android:id="@+id/edtNomeTarefa2"
+            android:layout_width="@dimen/edtsWidth"
+            android:layout_height="@dimen/edtsHeight"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/texto"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerHorarios2" />
+
+        <Button
+            android:id="@+id/btnAttTarefa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/ceruleo"
+            android:onClick="attTarefa"
+            android:text="@string/btnAttTarefa"
+            android:textColor="@color/telaFundo"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNomeTarefa2" />
+
+        <Button
+            android:id="@+id/btnTarefaFeita"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/ceruleo"
+            android:onClick="feita"
+            android:text="@string/btnTarefaFeita"
+            android:textColor="@color/telaFundo"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAttTarefa" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

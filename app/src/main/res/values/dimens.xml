@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edtsWidth">330dp</dimen>
+    <dimen name="edtsHeight">55dp</dimen>
+    <dimen name="btnsWidth">175dp</dimen>
+    <dimen name="textSizeTitles">28sp</dimen>
+    <dimen name="textSizeCommomTexts">20sp</dimen>
+</resources>

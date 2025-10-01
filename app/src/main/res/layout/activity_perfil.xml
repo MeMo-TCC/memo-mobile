@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/telaFundo"
+        android:onClick="voltar"
+        tools:context=".ActivityPerfil">
+
+        <Button
+            android:id="@+id/btnSairDaConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/ceruleo"
+            android:text="Sair da sua conta"
+            android:textColor="@color/telaFundo"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInformacaoPerf" />
+
+        <Button
+            android:id="@+id/btnVoltar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/ceruleo"
+            android:onClick="voltarAoMenu"
+            android:text="@string/btnVoltar"
+            android:textColor="@color/telaFundo"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSairDaConta" />
+
+        <EditText
+            android:id="@+id/etNumTelPerfil"
+            android:layout_width="@dimen/edtsWidth"
+            android:layout_height="@dimen/edtsHeight"
+            android:layout_marginTop="40dp"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="number"
+            android:text="(19)98765-4321"
+            android:textColor="@color/texto"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etDataNascPerfil" />
+
+        <EditText
+            android:id="@+id/etDataNascPerfil"
+            android:layout_width="@dimen/edtsWidth"
+            android:layout_height="@dimen/edtsHeight"
+            android:layout_marginTop="40dp"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            android:text="22/12/1982"
+            android:textColor="@color/texto"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmailPerfil" />
+
+        <EditText
+            android:id="@+id/etEmailPerfil"
+            android:layout_width="@dimen/edtsWidth"
+            android:layout_height="@dimen/edtsHeight"
+            android:layout_marginTop="40dp"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:text="fulano@gmail.com"
+            android:textColor="@color/texto"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNomePerfil" />
+
+        <EditText
+            android:id="@+id/etNomePerfil"
+            android:layout_width="@dimen/edtsWidth"
+            android:layout_height="@dimen/edtsHeight"
+            android:layout_marginTop="20dp"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:text="Fulano"
+            android:textColor="@color/texto"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/textSizeCommomTexts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPerfil" />
+
+        <ImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPerfil"
+            app:srcCompat="@drawable/perfil" />
+
+        <TextView
+            android:id="@+id/txtPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Vizualizar Perfil"
+            android:textColor="@color/texto"
+            android:textSize="@dimen/textSizeTitles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtInformacaoPerf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Para modificar seus dados, acesse o site."
+            android:textColor="@color/texto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNumTelPerfil" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MEMO</string>
+    <string name="txtBemVindo">Welcome to MEMO</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnCad">Sign up</string>
+    <string name="txtOu">or</string>
+    <string name="txtCadastre">Sign up</string>
+    <string name="etNumTel">Telephone number</string>
+    <string name="btnCadastrar">Sign up</string>
+    <string name="etNome">Name</string>
+    <string name="etEmail">E-mail</string>
+    <string name="etDataNasc">Birth date</string>
+    <string name="txtEntrar">Login</string>
+    <string name="etSenha">Password</string>
+    <string name="txtMemo">MEMO</string>
+    <string name="txtCarregando">Loading...</string>
+    <string name="txtInicio">Here you can add tasks or mark them as completed</string>
+    <string name="txtFeitas">Tasks done</string>
+    <string name="txtPendentes">Pending tasks</string>
+    <string name="btnModTarefa">Modify task</string>
+    <string name="btnAdicionar">Schedule new task</string>
+    <string name="btnVoltar">Back</string>
+    <string name="txtAddTarefa">Add task</string>
+    <string name="edtNomeTarefa">Task name</string>
+    <string name="btnAddTarefa">Add task</string>
+    <string name="txtModTarefa">Modify task</string>
+    <string name="btnAttTarefa">Update task</string>
+    <string name="btnTarefaFeita">Mark as done</string>
+</resources>
